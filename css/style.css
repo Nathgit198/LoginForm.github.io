@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background: rgb(248, 248, 248);
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
-    height: 100vh;
 }
+
 a {
     outline: none;
     text-decoration: none;
@@ -17,65 +19,66 @@ a {
     font-size: 15px;
 }
 
-#particles-js {
+.container {
+    display: flex;
     height: 100vh;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 600px;
-    height: 650px;
-    background: rgb(255, 255, 255);
-    margin: 0 auto;
-    border-radius: 15px;
     box-shadow: 3px 10px 10px rgb(219, 219, 219);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 37.5rem;
+    height: 40.625rem;
 }
 
-form {
+.email-password {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 650px;
 }
+
 .titleLogin {
     font-size: 50px;
-    position: relative;
-    top: -5rem;
 }
-p {
-    position: relative;
-    top: -5rem;
-}
-#emailUser, #passwordUser {
-    width: 450px;
-    height: 40px;
+
+#emailUser,
+#passwordUser {
+    width: 28.125rem;
+    height: 2.5rem;
     padding: 10px;
     border: 1px solid rgb(230, 230, 230);
-    border-radius: 9px;
+    border-radius: 0.5625rem;
     margin: 0 0 15px;
     font-size: 15px;
 }
-#emailUser:focus, #passwordUser:focus {
+
+#emailUser:focus,
+#passwordUser:focus {
     opacity: 0.8;
     outline: none;
 }
+
 .submit {
     margin: 15px 0 15px;
 }
+
 .titleRemember {
     margin: 0 10px;
 }
+
 .submit {
-    width: 450px;
+    width: 100%;
     height: 40px;
+    max-width: 450px;
+
     border: none;
     border-radius: 20px;
     background: linear-gradient(to right, #d801ff, #8500ff);
@@ -84,12 +87,124 @@ p {
     font-size: 16px;
     font-weight: 600;
 }
+
 .submit:hover {
     opacity: 0.8;
 }
+
 .form-footer {
     display: inline-flex;
     justify-content: space-between;
     gap: 2rem;
     margin: 1rem 0 0;
+}
+
+/* Responsividade */
+/* Menor que 320px */
+@media only screen and (max-width: 320px) {
+    body, .submit, .forgotPassword, .form-footer a {
+        font-size: calc(8px + 1vmin);
+    }
+    .form {
+        max-width: 260px;
+    }
+    #emailUser,
+    #passwordUser {
+        max-width: 200px;
+    }
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+    .form-footer {
+        text-align: center;
+    }
+}
+
+/* Maior que 321px e menor que 424px */
+@media screen and (min-width: 321px) and (max-width: 424px) {
+    body, .submit {
+        font-size: calc(8px + 1vmin);
+    }
+    .form {
+        max-width: 350px;
+    }
+    #emailUser,
+    #passwordUser, .form-footer {
+        max-width: 280px;
+    }
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+    .form-footer {
+        text-align: center;
+    }
+}
+
+/* Maior que 425px e menor que 699px */
+@media screen and (min-width: 425px) and (max-width: 699px) {
+    body, .submit {
+        font-size: calc(8px + 1vmin);
+    }
+    .form {
+        max-width: 410px;
+    }
+    #emailUser,
+    #passwordUser, .form-footer {
+        max-width: 350px;
+    }
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+    .form-footer {
+        text-align: center;
+    }
+}
+
+/* Tablets - Maior que 700px e menor que 1023px*/
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+    body, .submit {
+        font-size: calc(8px + 1vmin);
+    }
+    .form {
+        max-width: 450px;
+    }
+    #emailUser,
+    #passwordUser, .form-footer {
+        max-width: 350px;
+    }
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body, .submit {
+        font-size: calc(8px + 1vmin);
+    }
+    .form {
+        max-width: 550px;
+    }
+    #emailUser,
+    #passwordUser, .form-footer {
+        max-width: 450px;
+    }
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+}
+
+@media (min-width:1400px) {
+    body, .submit {
+        font-size: calc(8px + 1vmin);
+    }
+    .form {
+        max-width: 600px;
+    }
+    #emailUser,
+    #passwordUser, .form-footer {
+        max-width: 450px;
+    }
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
 }
