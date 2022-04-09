@@ -6,8 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+    <main class="container">
+        <section class="form">
+            <h2 class="titleLogin">Login</h2>
+            <p>or use your email</p>
+            <form action="">
+                <label for="emailUser">Email:</label>
+                <input type="email" name="email" id="emailUser">
+                <label for="passwordUser">Password:</label>
+                <input type="password" name="password" id="passwordUser">
+                <section class="remmemberMe">
+                    <input type="checkbox" name="remember_me">
+                    <label for="remember_me">Remember Me</label>
+                </section>
+                <section class="toggle-password">
+                    <input type="checkbox" onclick="togglePassword()">
+                    <label for="togglePassword">Mostrar/esconder senha</label>
+                </section>
+                <button type="submit" class="submit">Submit</button>
+                <a href="#" class="forgotPassword">Forgot Password?</a>
+            </form>
+            <section class="form-footer">
+                <a href="#" class="privacy">Privacy Policy</a>
+                <a href="#" class="terms">Terms & Conditions</a>
+            </section>
+        </section>
+    </main>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     
+    <script src="script.js"></script>
 </body>
 </html>

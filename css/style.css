@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(248, 248, 248);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 650px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 3px 10px 10px rgb(219, 219, 219);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+}
+.titleLogin {
+    font-size: 50px;
+    position: relative;
+    top: -5rem;
+}
+p {
+    position: relative;
+    top: -5rem;
+}
+#emailUser, #passwordUser {
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 9px;
+    margin: 0 0 15px;
+    font-size: 15px;
+}
+#emailUser:focus, #passwordUser:focus {
+    opacity: 0.8;
+    outline: none;
+}
+.submit {
+    margin: 15px 0 15px;
+}
+.titleRemember {
+    margin: 0 10px;
+}
+.submit {
+    width: 450px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #d801ff, #8500ff);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.submit:hover {
+    opacity: 0.8;
+}
+.form-footer {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem 0 0;
+}
