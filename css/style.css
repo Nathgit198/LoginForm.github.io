@@ -113,8 +113,8 @@ section.form {
     flex-direction: column;
 }
 
-.titleLogin {
-    font-size: 50px;
+.title {
+    font-size: 35px;
 }
 
 #emailUser,

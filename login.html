@@ -28,31 +28,43 @@
             </ul>
         </nav>
         <section class="form">
-            <h2 class="titleLogin">Login</h2>
+            <h2 class="title">Fazer login</h2>
             <form action="">
                 <section class="email-password">
                     <label for="emailUser">Email:</label>
                     <input type="email" name="email" id="emailUser">
-                    <label for="passwordUser">Password:</label>
+                    <label for="passwordUser">Senha:</label>
                     <input type="password" name="password" id="passwordUser">
                 </section>
                 <section class="remmemberMe">
                     <input type="checkbox" name="remember_me">
-                    <label for="remember_me">Remember Me</label>
+                    <label for="remember_me">Lembrar senha</label>
                 </section>
                 <section class="toggle-password">
                     <input type="checkbox" onclick="togglePassword()">
                     <label for="togglePassword">Mostrar/esconder senha</label>
                 </section>
-                <button type="submit" class="submit">Submit</button>
-                <a href="#" class="forgotPassword">Forgot Password?</a>
+                <button type="submit" class="submit">Login</button>
+                <a href="#" class="forgotPassword">Esqueceu a senha?</a>
             </form>
             <section class="form-footer">
-                <a href="#" class="privacy">Privacy Policy</a>
-                <a href="#" class="terms">Terms & Conditions</a>
+                <a href="#" class="privacy">Política de Privacidade</a>
+                <a href="#" class="terms">Termos & Condições</a>
             </section>
         </section>
     </main>
+
+    <!-- Acessibilidade libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <script src="script.js"></script>
 </body>
