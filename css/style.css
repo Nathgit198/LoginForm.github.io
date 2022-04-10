@@ -5,30 +5,95 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html {
+    --bg: #f8f8f8;
+    --bgForm: #fff;
+    --colorText: #000;
+    --white: #fff;
+    --box-shadow: #dbdbdb;
+}
 body {
-    background: rgb(248, 248, 248);
+    background: var(--bg);
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
+    transition: background 0.2s linear;
 }
 
 a {
+    color: var(--colorText);
     outline: none;
     text-decoration: none;
-    color: black;
     font-size: 15px;
 }
 
-.container {
+li {
+    list-style: none;
+}
+
+.navbar {
     display: flex;
-    height: 100vh;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: inline-flex;
+    /* justify-content: space-between; */
     align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+.nav {
+    color: var(--colorText);
+}
+/* Botao de darkmode */
+.darkmode {
+    opacity: 0;
+    position: absolute;
+}
+
+.darkmode:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.label {
+    background: #fff;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    height: 30px;
+    width: 60px;
+    position: relative;
+    padding: 6px;
+}
+
+.ball {
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+    width: 27px;
+    height: 24px;
+    position: absolute;
+    transition: transform 0.2s linear;
+}
+
+.container {
+    height: 100vh;
+}
+
+section.form {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .form {
-    box-shadow: 3px 10px 10px rgb(219, 219, 219);
-    background: rgb(255, 255, 255);
+    box-shadow: 3px 10px 10px var(--box-shadow);
+    background: var(--bgForm);
     border-radius: 1rem;
 
     display: grid;
@@ -54,7 +119,7 @@ a {
     width: 28.125rem;
     height: 2.5rem;
     padding: 10px;
-    border: 1px solid rgb(230, 230, 230);
+    border: 1px solid #dbdbdb;
     border-radius: 0.5625rem;
     margin: 0 0 15px;
     font-size: 15px;
@@ -83,7 +148,7 @@ a {
     border-radius: 20px;
     background: linear-gradient(to right, #d801ff, #8500ff);
     cursor: pointer;
-    color: white;
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
 }
@@ -102,19 +167,27 @@ a {
 /* Responsividade */
 /* Menor que 320px */
 @media only screen and (max-width: 320px) {
-    body, .submit, .forgotPassword, .form-footer a {
+
+    body,
+    .submit,
+    .forgotPassword,
+    .form-footer a {
         font-size: calc(8px + 1vmin);
     }
+
     .form {
         max-width: 250px;
     }
+
     #emailUser,
     #passwordUser {
         max-width: 200px;
     }
+
     .titleLogin {
         font-size: calc(30px + 1vmin);
     }
+
     .form-footer {
         text-align: center;
     }
@@ -122,19 +195,26 @@ a {
 
 /* Maior que 321px e menor que 424px */
 @media screen and (min-width: 321px) and (max-width: 424px) {
-    body, .submit {
+
+    body,
+    .submit {
         font-size: calc(8px + 1vmin);
     }
+
     .form {
         max-width: 340px;
     }
+
     #emailUser,
-    #passwordUser, .form-footer {
+    #passwordUser,
+    .form-footer {
         max-width: 280px;
     }
+
     .titleLogin {
         font-size: calc(30px + 1vmin);
     }
+
     .form-footer {
         text-align: center;
     }
@@ -142,19 +222,26 @@ a {
 
 /* Maior que 425px e menor que 699px */
 @media screen and (min-width: 425px) and (max-width: 699px) {
-    body, .submit {
+
+    body,
+    .submit {
         font-size: calc(8px + 1vmin);
     }
+
     .form {
         max-width: 400px;
     }
+
     #emailUser,
-    #passwordUser, .form-footer {
+    #passwordUser,
+    .form-footer {
         max-width: 350px;
     }
+
     .titleLogin {
         font-size: calc(30px + 1vmin);
     }
+
     .form-footer {
         text-align: center;
     }
@@ -162,48 +249,66 @@ a {
 
 /* Tablets - Maior que 700px e menor que 1023px*/
 @media screen and (min-width: 700px) and (max-width: 1023px) {
-    body, .submit {
+
+    body,
+    .submit {
         font-size: calc(8px + 1vmin);
     }
+
     .form {
         max-width: 440px;
     }
+
     #emailUser,
-    #passwordUser, .form-footer {
+    #passwordUser,
+    .form-footer {
         max-width: 350px;
     }
+
     .titleLogin {
         font-size: calc(30px + 1vmin);
     }
 }
 
 @media screen and (min-width:1024px) {
-    body, .submit {
+
+    body,
+    .submit {
         font-size: calc(8px + 1vmin);
     }
+
     .form {
         max-width: 540px;
     }
+
     #emailUser,
-    #passwordUser, .form-footer {
+    #passwordUser,
+    .form-footer {
         max-width: 450px;
     }
+
     .titleLogin {
         font-size: calc(30px + 1vmin);
     }
 }
 
 @media (min-width:1400px) {
-    body, .submit {
+
+    body,
+    .submit {
         font-size: calc(8px + 1vmin);
     }
+
     .form {
         max-width: 590px;
     }
+
     #emailUser,
-    #passwordUser, .form-footer {
+    #passwordUser,
+    .form-footer {
         max-width: 450px;
     }
+
     .titleLogin {
         font-size: calc(30px + 1vmin);
     }
