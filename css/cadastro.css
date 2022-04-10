@@ -1,0 +1,149 @@
+/* Responsividade */
+/* Menor que 320px */
+@media only screen and (max-width: 320px) {
+
+    body,
+    .submit,
+    .forgotPassword,
+    .form-footer a {
+        font-size: calc(8px + 1vmin);
+    }
+
+    .form {
+        max-width: 250px;
+    }
+
+    #emailUser,
+    #passwordUser, #username {
+        max-width: 200px;
+    }
+
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+
+    .form-footer {
+        text-align: center;
+    }
+}
+
+/* Maior que 321px e menor que 424px */
+@media screen and (min-width: 321px) and (max-width: 424px) {
+
+    body,
+    .submit {
+        font-size: calc(8px + 1vmin);
+    }
+
+    .form {
+        max-width: 340px;
+    }
+
+    #emailUser,
+    #passwordUser, #username,
+    .form-footer {
+        max-width: 280px;
+    }
+
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+
+    .form-footer {
+        text-align: center;
+    }
+}
+
+/* Maior que 425px e menor que 699px */
+@media screen and (min-width: 425px) and (max-width: 699px) {
+
+    body,
+    .submit {
+        font-size: calc(8px + 1vmin);
+    }
+
+    .form {
+        max-width: 400px;
+    }
+
+    #emailUser,
+    #passwordUser, #username,
+    .form-footer {
+        max-width: 350px;
+    }
+
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+
+    .form-footer {
+        text-align: center;
+    }
+}
+
+/* Tablets - Maior que 700px e menor que 1023px*/
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+
+    body,
+    .submit {
+        font-size: calc(8px + 1vmin);
+    }
+
+    .form {
+        max-width: 460px;
+    }
+
+    #emailUser,
+    #passwordUser, #username,
+    .form-footer {
+        max-width: 340px;
+    }
+
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    body,
+    .submit {
+        font-size: calc(8px + 1vmin);
+    }
+
+    .form {
+        max-width: 540px;
+    }
+
+    #emailUser,
+    #passwordUser, #username,
+    .form-footer {
+        max-width: 450px;
+    }
+
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+}
+
+@media (min-width:1400px) {
+
+    body,
+    .submit {
+        font-size: calc(8px + 1vmin);
+    }
+
+    .form {
+        max-width: 590px;
+    }
+
+    #emailUser,
+    #passwordUser, #username,
+    .form-footer {
+        max-width: 450px;
+    }
+
+    .titleLogin {
+        font-size: calc(30px + 1vmin);
+    }
+}

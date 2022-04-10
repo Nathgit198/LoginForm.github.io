@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <main class="container">
+        <nav class="navbar">
+            <ul class="grid">
+                <li><a href="index.html" class="nav">Início</a></li>
+                <li><a href="login.html" class="nav">Login</a></li>
+                <li><a href="cadastro.html" class="nav">Cadastro</a></li>
+                <li>
+                    <input type="checkbox" class="darkmode" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <i class="bi bi-sun"></i>
+                        <i class="bi bi-moon-stars-fill"></i>
+                        <section class="ball"></section>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+        <section class="form">
+            <h2 class="title-register">Register</h2>
+            <form action="">
+                <section class="email-password">
+                    <label for="emailUser">Email:</label>
+                    <input type="email" name="email" id="emailUser">
+                    
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                    
+                    <label for="passwordUser">Password:</label>
+                    <input type="password" name="password" id="passwordUser">
+                </section>
+                <section class="remmemberMe">
+                    <input type="checkbox" name="remember_me">
+                    <label for="remember_me">Remember Me</label>
+                </section>
+                <section class="toggle-password">
+                    <input type="checkbox" onclick="togglePassword()">
+                    <label for="togglePassword">Mostrar/esconder senha</label>
+                </section>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+            <section class="form-footer">
+                <a href="#" class="privacy">Privacy Policy</a>
+                <a href="#" class="terms">Terms & Conditions</a>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

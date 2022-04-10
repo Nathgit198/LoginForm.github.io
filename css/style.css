@@ -118,7 +118,7 @@ section.form {
 }
 
 #emailUser,
-#passwordUser {
+#passwordUser, #username {
     width: 28.125rem;
     height: 2.5rem;
     padding: 10px;
