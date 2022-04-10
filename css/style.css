@@ -106,7 +106,7 @@ a {
         font-size: calc(8px + 1vmin);
     }
     .form {
-        max-width: 260px;
+        max-width: 250px;
     }
     #emailUser,
     #passwordUser {
@@ -126,7 +126,7 @@ a {
         font-size: calc(8px + 1vmin);
     }
     .form {
-        max-width: 350px;
+        max-width: 340px;
     }
     #emailUser,
     #passwordUser, .form-footer {
@@ -146,7 +146,7 @@ a {
         font-size: calc(8px + 1vmin);
     }
     .form {
-        max-width: 410px;
+        max-width: 400px;
     }
     #emailUser,
     #passwordUser, .form-footer {
@@ -166,7 +166,7 @@ a {
         font-size: calc(8px + 1vmin);
     }
     .form {
-        max-width: 450px;
+        max-width: 440px;
     }
     #emailUser,
     #passwordUser, .form-footer {
@@ -182,7 +182,7 @@ a {
         font-size: calc(8px + 1vmin);
     }
     .form {
-        max-width: 550px;
+        max-width: 540px;
     }
     #emailUser,
     #passwordUser, .form-footer {
@@ -198,7 +198,7 @@ a {
         font-size: calc(8px + 1vmin);
     }
     .form {
-        max-width: 600px;
+        max-width: 590px;
     }
     #emailUser,
     #passwordUser, .form-footer {
