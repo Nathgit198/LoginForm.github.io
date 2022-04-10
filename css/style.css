@@ -7,8 +7,8 @@
 }
 html {
     --bg: #f8f8f8;
-    --bgForm: #fff;
-    --colorText: #000;
+    --bg-form: #fff;
+    --color-text: #000;
     --white: #fff;
     --box-shadow: #dbdbdb;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-    color: var(--colorText);
+    color: var(--color-text);
     outline: none;
     text-decoration: none;
     font-size: 15px;
@@ -43,7 +43,7 @@ li {
     margin: 1rem;
 }
 .nav {
-    color: var(--colorText);
+    color: var(--color-text);
 }
 /* Botao de darkmode */
 .darkmode {
@@ -52,7 +52,7 @@ li {
 }
 
 .darkmode:checked + .label .ball {
-    transform: translateX(24px);
+    transform: translateX(-24px);
 }
 
 .label {
@@ -70,11 +70,12 @@ li {
 
 .ball {
     border-radius: 50%;
-    background: var(--white);
+    background: #fff;
     box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
     width: 27px;
     height: 24px;
     position: absolute;
+    right: 3px;
     transition: transform 0.2s linear;
 }
 
@@ -89,11 +90,13 @@ section.form {
     align-items: center;
     margin: 0 auto;
     margin-top: 2rem;
+    font-size: 16px;
 }
 
 .form {
     box-shadow: 3px 10px 10px var(--box-shadow);
-    background: var(--bgForm);
+    background: var(--bg-form);
+    color: var(--color-text);
     border-radius: 1rem;
 
     display: grid;
