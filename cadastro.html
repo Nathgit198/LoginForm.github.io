@@ -12,9 +12,8 @@
 <body>
     <main class="container">
         <nav class="navbar">
-            <ul class="grid">
-                <li><a href="index.html" class="nav">Início</a></li>
-                <li><a href="login.html" class="nav">Login</a></li>
+            <ul class="grid" role="navigation">
+                <li><a href="index.html" class="nav">Login</a></li>
                 <li><a href="cadastro.html" class="nav">Cadastro</a></li>
                 <li>
                     <input type="checkbox" class="darkmode" id="checkbox">
@@ -28,7 +27,7 @@
         </nav>
         <section class="form">
             <h2 class="title">Cadastro</h2>
-            <form action="">
+            <form action="" role="form">
                 <section class="email-password">
                     <label for="emailUser">Email:</label>
                     <input type="email" name="email" id="emailUser">
